@@ -1,10 +1,3 @@
-//
-//  Music_PlayerApp.swift
-//  Music Player
-//
-//  Created by Fabian Moreno on 06.09.24.
-//
-
 import SwiftUI
 
 @main
