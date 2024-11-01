@@ -1,3 +1,10 @@
-# Batch19Kurs-App
+# Quotely: Zitate
 
-Dieses Projekt wird im Laufe des Kurses gemeinsam erarbeitet und beinhaltet die Beispiele aus den Vorlesungen.
+Wochenprojekt zum Thema APIs.
+Erfüllt die grundlegenden Anforderungen.
+
+
+
+## Screenshots
+
+<img src="img/quote.png" alt="Quote" height="350"/>
