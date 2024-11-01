@@ -73,7 +73,7 @@ struct InspirationView: View {
         }
         
         let headers = [
-            "Authorization": "Client-ID N4HknMQvVuuMpIKow5r9uXU3U32ZGKnfpe0r-GrSbPA"
+            "Authorization": "Client-ID \(APIKeys.unsplash)"
         ]
         
         var request = URLRequest(url: url)
