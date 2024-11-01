@@ -16,6 +16,7 @@
 		4E77F2112CD4BA0F0051578D /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77F2102CD4BA0F0051578D /* CategoryDetailView.swift */; };
 		4E77F2132CD4BBCA0051578D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77F2122CD4BBCA0051578D /* Category.swift */; };
 		4E77F2182CD4C0260051578D /* AuthorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77F2172CD4C0260051578D /* AuthorDetailView.swift */; };
+		4E77F2222CD4E4900051578D /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77F2212CD4E48F0051578D /* APIKeys.swift */; };
 		4EBFFE822CC243D600474B90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBFFE7C2CC243D600474B90 /* Preview Assets.xcassets */; };
 		4EBFFE832CC243D600474B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBFFE7E2CC243D600474B90 /* Assets.xcassets */; };
 		4EBFFE852CC243D600474B90 /* QuotelyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFE802CC243D600474B90 /* QuotelyApp.swift */; };
@@ -36,6 +37,7 @@
 		4E77F2102CD4BA0F0051578D /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		4E77F2122CD4BBCA0051578D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		4E77F2172CD4C0260051578D /* AuthorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailView.swift; sourceTree = "<group>"; };
+		4E77F2212CD4E48F0051578D /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		4EBFFE622CC243B400474B90 /* Quotely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBFFE7C2CC243D600474B90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EBFFE7E2CC243D600474B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		4EBFFE942CC249EC00474B90 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4E77F2212CD4E48F0051578D /* APIKeys.swift */,
 				4EBFFE952CC249F000474B90 /* Enums */,
 			);
 			path = Utilities;
@@ -295,6 +298,7 @@
 				4EBFFE852CC243D600474B90 /* QuotelyApp.swift in Sources */,
 				4EBFFE972CC249F900474B90 /* HTTPError.swift in Sources */,
 				4E77F2062CD4B6860051578D /* CategoryGridView.swift in Sources */,
+				4E77F2222CD4E4900051578D /* APIKeys.swift in Sources */,
 				4E77F2182CD4C0260051578D /* AuthorDetailView.swift in Sources */,
 				4E77F1FF2CD4B2560051578D /* TabItem.swift in Sources */,
 				4EBFFE932CC2496700474B90 /* QuoteDetailView.swift in Sources */,

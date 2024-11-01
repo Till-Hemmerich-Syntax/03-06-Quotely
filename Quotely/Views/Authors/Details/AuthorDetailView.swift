@@ -57,7 +57,7 @@ struct AuthorDetailView: View {
     }
     
     private func getQuotesFromAPI() async throws -> [Quote] {
-        let urlString = "https://api.syntax-institut.de/quotes?limit=20&slug=\(author.slug)&key=hLJiQcaMq9hjLfvYFEYcUD1y5Qxd7Bz5"
+        let urlString = "https://api.syntax-institut.de/quotes?limit=20&author=\(author.slug)&key=\(APIKeys.quotes)"
         
         guard let url = URL(string: urlString) else {
             throw HTTPError.invalidURL
