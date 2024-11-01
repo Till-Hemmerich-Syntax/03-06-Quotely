@@ -48,7 +48,7 @@ struct QuoteView: View {
     
     // MARK: - Functions
     
-    private func fetchQuote() {
+    private func fetchQuote() {        
         Task {
             do {
                 quote = try await getQuoteFromAPI()

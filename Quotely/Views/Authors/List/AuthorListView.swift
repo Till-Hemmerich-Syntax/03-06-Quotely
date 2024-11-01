@@ -52,7 +52,11 @@ struct AuthorListView: View {
     }
     
     private func getAuthorsFromAPI() async throws -> [Author] {
+<<<<<<< HEAD
         let urlString = "https://api.syntax-institut.de/authors?key=UaLxT0P1vhTVun5YKj7XhdYyoLYFNtOy"
+=======
+        let urlString = "https://api.syntax-institut.de/authors?key=\(APIKeys.quotes)"
+>>>>>>> solution-weiterfuehrend
         
         guard let url = URL(string: urlString) else {
             throw HTTPError.invalidURL
