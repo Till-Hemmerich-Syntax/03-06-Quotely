@@ -16,6 +16,9 @@
 		4E77F2112CD4BA0F0051578D /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77F2102CD4BA0F0051578D /* CategoryDetailView.swift */; };
 		4E77F2132CD4BBCA0051578D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77F2122CD4BBCA0051578D /* Category.swift */; };
 		4E77F2182CD4C0260051578D /* AuthorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77F2172CD4C0260051578D /* AuthorDetailView.swift */; };
+		4E77F21B2CD4D8CC0051578D /* InspirationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77F21A2CD4D8CC0051578D /* InspirationView.swift */; };
+		4E77F21D2CD4DE8B0051578D /* UnsplashImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77F21C2CD4DE890051578D /* UnsplashImage.swift */; };
+		4E77F2202CD4DFAE0051578D /* ImagesColumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77F21F2CD4DFAE0051578D /* ImagesColumView.swift */; };
 		4EBFFE822CC243D600474B90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBFFE7C2CC243D600474B90 /* Preview Assets.xcassets */; };
 		4EBFFE832CC243D600474B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBFFE7E2CC243D600474B90 /* Assets.xcassets */; };
 		4EBFFE852CC243D600474B90 /* QuotelyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFE802CC243D600474B90 /* QuotelyApp.swift */; };
@@ -36,6 +39,9 @@
 		4E77F2102CD4BA0F0051578D /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		4E77F2122CD4BBCA0051578D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		4E77F2172CD4C0260051578D /* AuthorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailView.swift; sourceTree = "<group>"; };
+		4E77F21A2CD4D8CC0051578D /* InspirationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationView.swift; sourceTree = "<group>"; };
+		4E77F21C2CD4DE890051578D /* UnsplashImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImage.swift; sourceTree = "<group>"; };
+		4E77F21F2CD4DFAE0051578D /* ImagesColumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesColumView.swift; sourceTree = "<group>"; };
 		4EBFFE622CC243B400474B90 /* Quotely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBFFE7C2CC243D600474B90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EBFFE7E2CC243D600474B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +124,23 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		4E77F2192CD4D8A30051578D /* Inspiration */ = {
+			isa = PBXGroup;
+			children = (
+				4E77F21A2CD4D8CC0051578D /* InspirationView.swift */,
+				4E77F21E2CD4DFA40051578D /* Subviews */,
+			);
+			path = Inspiration;
+			sourceTree = "<group>";
+		};
+		4E77F21E2CD4DFA40051578D /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4E77F21F2CD4DFAE0051578D /* ImagesColumView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		4EBFFE592CC243B400474B90 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +186,7 @@
 				4EBFFE8E2CC2493300474B90 /* Quote */,
 				4E77F1FB2CD4B22E0051578D /* Authors */,
 				4E77F2042CD4B67B0051578D /* Categories */,
+				4E77F2192CD4D8A30051578D /* Inspiration */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +196,7 @@
 			children = (
 				4EBFFE8A2CC2443F00474B90 /* Quote.swift */,
 				4E77F2022CD4B4580051578D /* Author.swift */,
+				4E77F21C2CD4DE890051578D /* UnsplashImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,12 +315,15 @@
 				4E77F20B2CD4B7670051578D /* CategoryView.swift in Sources */,
 				4EBFFE892CC2440800474B90 /* QuoteView.swift in Sources */,
 				4EBFFE8B2CC2443F00474B90 /* Quote.swift in Sources */,
+				4E77F2202CD4DFAE0051578D /* ImagesColumView.swift in Sources */,
 				4E77F2032CD4B4590051578D /* Author.swift in Sources */,
 				4E77F1FD2CD4B23C0051578D /* NavigatorView.swift in Sources */,
 				4EBFFE852CC243D600474B90 /* QuotelyApp.swift in Sources */,
 				4EBFFE972CC249F900474B90 /* HTTPError.swift in Sources */,
 				4E77F2062CD4B6860051578D /* CategoryGridView.swift in Sources */,
 				4E77F2182CD4C0260051578D /* AuthorDetailView.swift in Sources */,
+				4E77F21D2CD4DE8B0051578D /* UnsplashImage.swift in Sources */,
+				4E77F21B2CD4D8CC0051578D /* InspirationView.swift in Sources */,
 				4E77F1FF2CD4B2560051578D /* TabItem.swift in Sources */,
 				4EBFFE932CC2496700474B90 /* QuoteDetailView.swift in Sources */,
 				4E77F2112CD4BA0F0051578D /* CategoryDetailView.swift in Sources */,
