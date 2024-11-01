@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AuthorsView: View {
+struct AuthorListView: View {
     
     // MARK: - Properties
     
@@ -20,7 +20,11 @@ struct AuthorsView: View {
     var body: some View {
         NavigationStack {
             List(authors) { author in
-                Text(author.name)
+                NavigationLink {
+                    AuthorDetailView(author: author)
+                } label: {
+                    Text(author.name)
+                }
             }
             .navigationTitle(TabItem.authors.title)
         }
@@ -61,5 +65,5 @@ struct AuthorsView: View {
 }
 
 #Preview {
-    AuthorsView()
+    AuthorListView()
 }

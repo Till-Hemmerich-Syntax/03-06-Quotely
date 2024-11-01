@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum TabItem: String, Identifiable, CaseIterable {
-    case quote, authors
+    case quote, authors, categories
     
     
     var id: String { rawValue }
@@ -17,6 +17,7 @@ enum TabItem: String, Identifiable, CaseIterable {
         switch self {
         case .quote: "Zitat"
         case .authors: "Autor:innen"
+        case .categories: "Kategorien"
         }
     }
     
@@ -24,6 +25,7 @@ enum TabItem: String, Identifiable, CaseIterable {
         switch self {
         case .quote: "quote.closing"
         case .authors: "person.crop.artframe"
+        case .categories: "square.grid.2x2"
         }
     }
     
@@ -31,7 +33,8 @@ enum TabItem: String, Identifiable, CaseIterable {
         Group {
             switch self {
             case .quote: QuoteView()
-            case .authors: AuthorsView()
+            case .authors: AuthorListView()
+            case .categories: CategoryGridView()
             }
         }
     }

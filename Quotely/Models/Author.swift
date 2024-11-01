@@ -10,4 +10,5 @@ import Foundation
 struct Author: Codable, Identifiable {
     var id: String
     var name: String
+    var slug: String
 }
