@@ -9,17 +9,14 @@ import SwiftUI
 
 struct AuthorListView: View {
     
-    // MARK: - Properties
-    
-    @State private var authors: [Author] = []
-    
-    
+    // MARK: - ViewModel
+    @StateObject var viewModel = AuthorListViewModel()
     
     // MARK: - Body
     
     var body: some View {
         NavigationStack {
-            List(authors) { author in
+            List(viewModel.authors) { author in
                 NavigationLink {
                     AuthorDetailView(author: author)
                 } label: {
@@ -29,37 +26,8 @@ struct AuthorListView: View {
             .navigationTitle(TabItem.authors.title)
         }
         .task {
-            fetchAuthors()
+            viewModel.fetchAuthors()
         }
-    }
-    
-    
-    
-    // MARK: - Functions
-    
-    private func fetchAuthors() {
-        guard authors.isEmpty else { return }
-        
-        Task {
-            do {
-                authors = try await getAuthorsFromAPI()
-            } catch let error as HTTPError {
-                print(error.message)
-            } catch {
-                print(error)
-            }
-        }
-    }
-    
-    private func getAuthorsFromAPI() async throws -> [Author] {
-        let urlString = "https://api.syntax-institut.de/authors?key=\(APIKeys.quotes)"
-        
-        guard let url = URL(string: urlString) else {
-            throw HTTPError.invalidURL
-        }
-        
-        let (data, _) = try await URLSession.shared.data(from: url)
-        return try JSONDecoder().decode([Author].self, from: data)
     }
     
 }

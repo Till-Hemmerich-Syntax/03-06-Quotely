@@ -56,6 +56,14 @@
 		4EBFFE982CC24CA700474B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D7E540942CF85B42006B2D26 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		4EBFFE5F2CC243B400474B90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -170,6 +178,7 @@
 		4EBFFE812CC243D600474B90 /* Quotely */ = {
 			isa = PBXGroup;
 			children = (
+				D7E540942CF85B42006B2D26 /* ViewModels */,
 				4EBFFE982CC24CA700474B90 /* Info.plist */,
 				4EBFFE7E2CC243D600474B90 /* Assets.xcassets */,
 				4EBFFE802CC243D600474B90 /* QuotelyApp.swift */,
@@ -254,6 +263,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D7E540942CF85B42006B2D26 /* ViewModels */,
 			);
 			name = Quotely;
 			packageProductDependencies = (
